@@ -1,4 +1,5 @@
 @import url('./header.css');
+@import url('./footer.css');
 
 :root {
     --color-white: #FFFFFF;
@@ -34,11 +35,25 @@ html:not([theme=dark]) > * {
     color: var(--color-black);
 }
 
+body {
+    background-color: var(--color-light-active);
+}
+
+main {
+    max-width: 1755px;
+    margin: auto;
+    padding: 1.25rem 1.75rem;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
+}
+
+ul {
+    list-style-type: none;
 }
 
 button {
