@@ -1,0 +1,30 @@
+header {
+    height: 64px;
+    padding: 0 1.75rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-dark);
+}
+
+header a:visited {
+    color: unset;
+    color: var(--color-light);
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header > nav > .nav-item {
+    padding: 0 .5rem;
+    background-color: var(--color-transparent);
+    display: inline-block;
+}
+
+header > nav > .nav-item:hover {
+    background-color: var(--color-dark-inactive);
+}
