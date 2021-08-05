@@ -1,30 +1,49 @@
 header {
-    height: 64px;
+    height: var(--header-navbar-height);
     padding: 0 1.75rem;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background: var(--color-dark);
 }
 
 header a:visited {
     color: unset;
-    color: var(--color-light);
 }
 
 header > nav {
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: row;
 }
 
 header > nav > .nav-item {
+    position: relative;
+    color: var(--color-light);
+    line-height: var(--header-navbar-height);
     padding: 0 .5rem;
     background-color: var(--color-transparent);
-    display: inline-block;
+    display: inline-flex;
+    will-change: color;
+    transition: color .25s;
 }
 
 header > nav > .nav-item:hover {
-    background-color: var(--color-dark-inactive);
+    color: var(--color-light-active);
+}
+
+header > nav > .nav-item > .indicator {
+    position: absolute;
+    border: 2px solid var(--color-transparent);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+header > nav > .nav-item.active > .indicator {
+    border: 2px solid var(--color-white);
+}
+
+header > nav > .nav-item.active {
+    color: var(--color-white);
 }

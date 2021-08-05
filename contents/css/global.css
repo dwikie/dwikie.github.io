@@ -4,15 +4,19 @@
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-transparent: transparent;
-    --color-light: #F5F5F5;
+    --color-light: #ADADAD;
+    --color-light-active: #EBEBEB;
+    --color-light-inactive: #A3A3A3;
     --color-dark: #212121;
-    --color-dark-active: #141414;
+    --color-dark-active: #0A0A0A;
+    --color-dark-idle: #3D3D3D;
     --color-dark-inactive: #5C5C5C;
     --color-cyber-grape-1: #4D3E73;
     --color-dark-blue-gray-1: #636B9A;
     --color-periwinkle-crayola-1: #C0CCE1;
     --color-magnolia-1: #FBF6FB;
     --font-display: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --header-navbar-height: 64px;
 }
 
 html > * {
@@ -33,6 +37,8 @@ html:not([theme=dark]) > * {
 a {
     text-decoration: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
 }
 
 button {
