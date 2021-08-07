@@ -1,15 +1,22 @@
 footer {
     position: relative;
-    bottom: 0;
+    overflow: hidden;
     background-color: var(--color-dark);
+    fill: var(--color-light-active);
     color: var(--color-white);
-    padding: 1.25rem 1.75rem;
     font-size: .85em;
 }
 
 footer > article {
+    padding: 1.25rem 1.75rem;
     max-width: 1755px;
     margin: auto;
+}
+
+footer > article#info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 footer > article#info > section {
@@ -34,4 +41,8 @@ footer ul > li > a {
 footer ul > li > .material-icons {
     font-size: inherit;
     margin-right: .75rem;
+}
+
+article#info > section {
+    margin-bottom: .5rem;
 }

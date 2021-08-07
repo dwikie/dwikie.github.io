@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: var(--color-dark);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%)
 }
 
 header a:visited {
@@ -21,7 +22,7 @@ header > nav {
     margin: auto;
 }
 
-header > nav > .nav-item {
+header > nav > .nav-menu > .nav-item {
     position: relative;
     color: var(--color-light);
     line-height: var(--header-navbar-height);
@@ -36,7 +37,7 @@ header > nav > .nav-item:hover {
     color: var(--color-light-active);
 }
 
-header > nav > .nav-item > .indicator {
+header > nav > .nav-menu > .nav-item > .indicator {
     position: absolute;
     border: 2px solid var(--color-transparent);
     width: 100%;
@@ -44,10 +45,11 @@ header > nav > .nav-item > .indicator {
     bottom: 0;
 }
 
-header > nav > .nav-item.active > .indicator {
+header > nav > .nav-menu > .nav-item.active > .indicator {
     border: 2px solid var(--color-white);
+    background-color: var(--color-white);
 }
 
-header > nav > .nav-item.active {
+header > nav > .nav-menu > .nav-item.active {
     color: var(--color-white);
 }

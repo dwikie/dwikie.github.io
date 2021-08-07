@@ -8,34 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contents/css/global.css">
     <title>Profile</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="nav-item active">
-                Profil
-                <span class="indicator"></span>
-            </a>
-            <a href="#" class="nav-item">
-                Portofolio
-                <span class="indicator"></span>
-            </a>
+            <section class="nav-menu">
+                <a href="#profile" class="nav-item">
+                    Profil
+                    <span class="indicator"></span>
+                </a>
+                <a href="#more-about-me" class="nav-item">
+                    Tentang saya
+                    <span class="indicator"></span>
+                </a>
+            </section>
         </nav>
     </header>
     <main>
-        <article id="profile">
-            <section id="photo"></section>
-            <section id="about-me">
-                <h4>Dwikie Reza Prananda</h4>
-            </section>
-        </article>
+        <div id="content">
+            <article id="profile">
+                <section id="about-me">
+                    <h5 class="text-theme">
+                        Halo, selamat datang!
+                    </h5>
+                    <p>
+                        Nama saya Dwikie Reza Prananda, seorang Antusias Teknologi juga <i>Programmer</i> dari Bogor, Jawa Barat. 
+                        Saya juga menyukai karya tulis seperti novel ringan. ツ
+                    </p>
+                </section>
+                <section id="photo">
+                    <div class="rectangle">
+                    </div>
+                </section>
+            </article>
+            <article id="more-about-me">
+                <h5 class="text-theme text-align-center">Tentang Saya</h5>
+                <p style="max-width: 800px; margin: auto; text-align: justify;">
+                    Lahir pada 9 September 1998, dengan keseharian tidak jauh dari perangkat elektronik khususnya komputer
+                    menjadikan saya sangat berkeinginan untuk mempelajarinya lebih dalam. Saya mengambil jurusan TKJ (Teknik Komputer Jaringan)
+                    di SMK di SMK Negeri 2 Kota Bogor, lalu melanjutkannya kuliah dengan prodi Manajemen Informatika di Bina Sarana Informatika.
+                </p>
+            </article>
+        </div>
     </main>
     <footer>
         <article id="info">
             <section id="contact">
-                <h3>Kontak</h3>
+                <h5>Kontak</h5>
                 <ul>
                     <li>
                         <i class="material-icons">email</i>
