@@ -8,68 +8,160 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/647ddf1174.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="contents/css/global.css">
     <title>Profile</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <section class="nav-menu">
-                <a href="#profile" class="nav-item">
-                    Profil
-                    <span class="indicator"></span>
-                </a>
-                <a href="#more-about-me" class="nav-item">
-                    Tentang saya
-                    <span class="indicator"></span>
-                </a>
-            </section>
-        </nav>
-    </header>
     <main>
         <div id="content">
-            <article id="profile">
-                <section id="about-me">
-                    <h5 class="text-theme">
-                        Halo, selamat datang!
-                    </h5>
-                    <p>
-                        Nama saya Dwikie Reza Prananda, seorang Antusias Teknologi juga <i>Programmer</i> dari Bogor, Jawa Barat. 
-                        Saya juga menyukai karya tulis seperti novel ringan. ツ
-                    </p>
-                </section>
-                <section id="photo">
-                    <div class="rectangle">
+            <article id="about-me" style="min-height: 640px;" class="d-flex justify-content-between align-items-center flex-lg-row flex-md-column-reverse flex-column-reverse container py-5">
+                <section id="description">
+                    <div id="description-title">
+                        <h3>
+                            Dwikie Reza Prananda <br>
+                            a <span class="highlight">Tech Enthusiast</span>
+                        </h3>
+                    </div>
+                    <div id="description-body">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                        amet sint. Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet.
                     </div>
                 </section>
+                <section id="photo" class="rounded-circle pe-4 mb-4"></section>
             </article>
-            <article id="more-about-me">
-                <h5 class="text-theme text-align-center">Tentang Saya</h5>
-                <p style="max-width: 800px; margin: auto; text-align: justify;">
-                    Lahir pada 9 September 1998, dengan keseharian tidak jauh dari perangkat elektronik khususnya komputer
-                    menjadikan saya sangat berkeinginan untuk mempelajarinya lebih dalam. Saya mengambil jurusan TKJ (Teknik Komputer Jaringan)
-                    di SMK Negeri 2 Kota Bogor, lalu melanjutkannya kuliah dengan prodi Manajemen Informatika di Bina Sarana Informatika.
-                </p>
+            <article id="bio">
+                <div class="container d-flex flex-column-reverse flex-sm-column-reverse flex-md-column-reverse flex-lg-row justify-content-evenly py-3">
+                    <section id="bio-contact" class="mx-0 mx-md-4 mx-lg-4">
+                        <h6>CONTACT</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-1 d-flex align-items-center">
+                                <span class="fas fa-phone-square-alt me-3 align-middle fs-6"></span>
+                                +62 857 1768 1025
+                            </li>
+                            <li class="mb-1 d-flex align-items-center">
+                                <span class="far fa-envelope me-3 align-middle fs-6"></span>
+                                <a href="mailto:neithroid@gmail.com" class="text-white text-decoration-none">neithroid@gmail.com</a>
+                            </li>
+                            <li class="mb-1 d-flex align-items-center">
+                                <span class="fas fas fa-map-marked-alt me-3 align-middle fs-6"></span>
+                                Bogor, Indonesia
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="bio-education" class="mx-0 mx-md-4 mx-lg-4">
+                        <h6>EDUCATION</h6>
+                        <ul class="list-unstyled">
+                            <dl>
+                                <dt>SMK Negeri 2 Kota Bogor</dt>
+                                <dd>Network Engineering &nbsp; 2013 - 2016</dd>
+                            </dl>
+                            <dl>
+                                <dt>Bina Sarana Informatika University</dt>
+                                <dd class="mb-0">System Information &nbsp; 2016 - 2019</dd>
+                                <ul>
+                                    <li class="opacity-75">GPA 3.36 out of 4.00</li>
+                                </ul>
+                            </dl>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+            <article id="project-experience" class="container py-3">
+                <h6 style="color: rgb(253,97,85);">Project/Experience</h6>
+                <div class="border-end-0 border-start-0 border-top-0 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Designing Dashboard</h5>
+                                <p class="text-muted">
+                                    <span class="badge rounded-pill bg-dark">2020</span>
+                                    &nbsp; Dashboard
+                                </p>
+                                <p class="card-text">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-end-0 border-start-0 border-top-0 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Designing Dashboard</h5>
+                                <p class="text-muted">
+                                    <span class="badge rounded-pill bg-dark">2020</span>
+                                    &nbsp; Dashboard
+                                </p>
+                                <p class="card-text">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-end-0 border-start-0 border-top-0 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-3">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Designing Dashboard</h5>
+                                <p class="text-muted">
+                                    <span class="badge rounded-pill bg-dark">2020</span>
+                                    &nbsp; Dashboard
+                                </p>
+                                <p class="card-text">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
     </main>
     <footer>
-        <article id="info">
-            <section id="contact">
-                <h5>Kontak</h5>
-                <ul>
-                    <li>
-                        <i class="material-icons">email</i>
-                        <a href="mailto:neithroid@gmail.com">neithroid@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="material-icons">phone</i>
-                        +62 857 1768 1025
-                    </li>
-                </ul>
-            </section>
+        <article id="social-media" class="container d-flex flex-column align-items-center py-5">
+            <ul class="list-inline mb-4">
+                <li class="list-inline-item me-4">
+                    <a href="" class="text-black">
+                        <span class="fab fa-facebook-square fs-1"></span>    
+                    </a>
+                </li>
+                <li class="list-inline-item me-4">
+                    <a href="" class="text-black">
+                        <span class="fab fa-instagram fs-1"></span>    
+                    </a>
+                </li>
+                <li class="list-inline-item me-4">
+                    <a href="" class="text-black">
+                        <span class="fab fa-twitter fs-1"></span>    
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="" class="text-black">
+                        <span class="fab fa-linkedin fs-1"></span>    
+                    </a>
+                </li>
+            </ul>
+            <p id="credit">Copyright ©2020 All rights reserved </p>
         </article>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
