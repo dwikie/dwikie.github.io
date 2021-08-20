@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>Document</title>
+    <title>Temperature Conversion</title>
 </head>
 <body>
-    <main class="container d-flex justify-content-center align-items-center vh-100">
-        <section id="temperature-converter">
-            <form action=""></form>
-        </section>
-        <section id="change-background-color" class="d-flex flex-direction-row align-items-center">
-            <label for="bg-color-picker" class="form-label mb-0 me-2">Change Background Color: </label>
-            <input type="color" class="form-control form-control-color" id="bg-color-picker" value="#ffffff" title="Choose your color">
-        </section>
+    <main class="container d-flex justify-content-center align-items-center flex-column vh-100">
+        <div class="content col-12 col-sm-6">
+            <section id="temperature-converter" class="border mb-3 p-2 px-sm-4">
+                <h4 class="text-center">Temperature Conversion</h4>
+                <form id="temperature-converter-form" class="d-flex flex-row mb-4">
+                    <div class="d-flex flex-column input-group">
+                        <input type="number" name="source" class="form-control fs-3 m-0 rounded-0 rounded-top w-100 text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
+                        <select name="source-type" class="border-top-0 form-select m-0 rounded-0 rounded-bottom w-100" aria-label="temperature origin type">
+                            <option selected value="C">Celcius</option>
+                            <option value="F">Fahrenheit</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                    <span class="d-flex align-items-center fs-1 col-1 justify-content-center">
+                        =
+                    </span>
+                    <div class="d-flex flex-column input-group">
+                        <input type="number" name="result" class="form-control m-0 fs-3 rounded-0 rounded-top w-100 text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="32">
+                        <select name="result-type" class="border-top-0 form-select m-0 rounded-0 rounded-bottom w-100" aria-label="temperature origin type">
+                            <option value="C">Celcius</option>
+                            <option selected value="F">Fahrenheit</option>
+                            <option value="K">Kelvin</option>
+                        </select>
+                    </div>
+                </form>
+            </section>
+            <section id="change-background-color" class="d-flex flex-direction-row align-items-center">
+                <label for="bg-color-picker" class="form-label mb-0 me-2">Change Background Color: </label>
+                <input type="color" class="form-control form-control-color" id="bg-color-picker" value="#ffffff" title="Choose your color">
+            </section>
+        </div>
     </main>
-    <script src="script.js"></script>
+    <script src="dom.js"></script>
 </body>
 </html>
