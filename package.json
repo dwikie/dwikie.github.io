@@ -1,16 +1,25 @@
 {
-  "name": "homework-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "dwikie.github.io",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:watch": "sass --watch ./src/scss/style.scss ./assets/css/style.css",
-    "sass:watch-min": "sass --watch ./src/scss/style.scss ./assets/css/style.min.css --style compressed"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.1.0"
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "next-images": "^1.8.5"
   }
 }

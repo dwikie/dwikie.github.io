@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex: 1 0;
+    padding: 1rem 2.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+}
+
+.nav-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.nav-item-wrapper > * {
+    list-style: none;
+    font-weight: 600;
+}
